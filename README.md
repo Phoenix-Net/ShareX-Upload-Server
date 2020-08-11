@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="https://cdn.qoilo.com/tK0y.gif">
+  <img src="https://github.com/Phoenixthedoggo/ShareX-Upload-Server/blob/master/src/server/views/assets/images/PhoenixNet%20CDN.png">
 </p>
 
 <img src="https://img.shields.io/badge/Hosting-Hyper%20Expert-blue?style=flat-square&logo=server-fault&logo-color=white&link=https://qoilo.com/hosting" alt="Hosting"> <img src="https://img.shields.io/badge/Support-Discord-blue?style=flat-square&logo=discord&color=7289DA&logoColor=7289DA&link=https://discord.gg/h8qthfS" alt="Discord">  <img src="https://img.shields.io/badge/Version-4.5.2-red?style=flat-square&link=https://qoilo.com/hosting" alt="Version">
 
-# ShareS - A Nodejs ShareX Upload Server
+# ShareS (PhoenixNet CDN Fork) - A Nodejs ShareX Upload Server
 ## Features
-
+- ### Now with encrypted / hashed password checking! 100x more secure!
 - ### Image/Video/General file uploading
 - ### Text (With [Syntax Highlighting](https://highlightjs.org/)) [[Example](https://cdn.qoilo.com/s62pq)]
 - ### URL shortening + a front end for the URL shortener as well
@@ -33,7 +33,7 @@ You must fill this out for the webserver to work properly. Below explains the co
 
 ```js
 {
-  "key": [""], // Password(s) for private uploading
+  "key": [""], // Password(s) for private uploading, hash using bcrypt-cli.
   "domain": "*.example.com", // Domain server will use. Will error if domain not used in request. Place "*" as the subdomain to enable wildcard subdomains for the webserver.
   "puploadKeyGenLength": 64, // Amount of characters server should use for pupload files
   "public": false, // Disables auth and does not render a password field for /upload
@@ -50,7 +50,7 @@ You must fill this out for the webserver to work properly. Below explains the co
     "png", "jpg", "gif", "mp4", "mp3", "jpeg", "tiff", "bmp", "ico", "psd", "eps", "raw", "cr2", "nef", "sr2", "orf", "svg", "wav", "webm", "aac", "flac", "ogg", "wma", "m4a", "gifv"
   ], // Allowed file types for non-admins
   "admin":{
-    "key": [""], // Admin password(s) for uploading & for gallery access
+    "key": [""], // Admin password(s) for uploading & for gallery access, hash using bcrypt-cli.
     "maxUploadSize": 1024, // Max upload size for admin in MB
     "allowed": [
     "png", "jpg", "gif", "mp4", "mp3","jpeg", "tiff", "bmp", "ico", "psd", "eps", "raw", "cr2", "nef", "sr2", "orf", "svg", "wav", "webm", "aac", "flac", "ogg", "wma", "m4a", "gifv", "html"
@@ -128,6 +128,7 @@ In addition to being able to use any password you want for puploads, if you type
 #### [Aetheryx](https://github.com/aetheryx) - Webserver Structure
 #### [Jaex](https://github.com/Jaex) - ShareX
 #### [FancyApps](https://github.com/fancyapps/fancybox) - Gallery lightbox script for displaying images, videos and more
+#### [Nexure](https://github.com/Nexure) - Helped me out with implementing B-hash
 
 
 #### <a href="https://qoilo.com/hosting">Cheap Hosting Options For Your Uploader</a>

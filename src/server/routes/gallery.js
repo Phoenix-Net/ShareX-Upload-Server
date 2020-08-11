@@ -1,4 +1,5 @@
 const fs = require('fs-extra');
+const bcryptjs = require('bcryptjs');
 
 async function get(_req, res) {
     res.setHeader('Content-Type', 'text/html');
@@ -9,12 +10,9 @@ async function post(req, res) {
     const userIP = req.headers['x-forwarded-for'] || req.connection.remoteAddress || req.socket.remoteAddress || req.connection.socket.remoteAddress;
     res.setHeader('Content-Type', 'text/html');
     const protocol = this.protocol();
-    var password = this.c.admin.key;
-    // Compatibility with old config
-    if(typeof password == "string"){
-      password = [password];
-    }
-    if (!this.c.admin.key.includes(req.body.password)) {
+    const password = this.c.admin.key;
+   // if (req.body.password !== this.c.admin.key) {
+    if (!this.auth(this.c.admin.key, req.body.password, this.c, false)) {
         res.statusCode = 401;
         res.render('unauthorized');
         res.end();

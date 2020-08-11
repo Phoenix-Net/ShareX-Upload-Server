@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>URL Shortener</title>
-    <meta property="og:site_name" content="ShareX Upload Server">
-    <meta property="og:title" content="URL Shortener">
-    <meta property="og:description" content="Shorten a URL">
+    <meta property="og:site_name" content="PhoenixNet CDN">
+    <meta property="og:title" content="File Upload">
+    <meta property="og:description" content="PhoenixNet CDN / Upload Service">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -46,14 +46,14 @@
 </div>
     <div>
         <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="background-color: rgb(52,52,52);">
-            <div class="container"><a class="navbar-brand text-left d-flex d-xl-flex justify-content-xl-start" href="#" style="color: rgb(255,255,255);font-family: Roboto, sans-serif;">ShareX Webserver</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="container"><a class="navbar-brand text-left d-flex d-xl-flex justify-content-xl-start" href="#" style="color: rgb(255,255,255);font-family: Roboto, sans-serif;"><img src="assets/images/PhoenixNet CDN.png" style="max-height:30px;"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div
                     class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="/" style="color: rgb(230,94,94);">Home</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="/gallery" style="color: rgb(230,94,94);">Gallery</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="/upload" style="color: rgb(230,94,94);">Upload</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="https://github.com/TannerReynolds/node-sharex-server" style="color: rgb(230,94,94);">Github</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="/" style="color: rgb(255,255,255);">Home</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="/gallery" style="color: rgb(255,255,255);">Gallery</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="/upload" style="color: rgb(255,255,255);">Upload</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="https://gsheps.net" style="color: rgb(255,255,255);">Website</a></li>
                     </ul>
             </div>
     </div>
@@ -62,12 +62,12 @@
     <div class="login-clean" style="background-color: rgb(59,59,59);">
         <form action="/short" method="post" id="urlForm" style="background-color: rgb(52,52,52);">
             <h2 class="sr-only">Login Form</h2>
-            <div class="illustration"><i class="fas fa-link" style="color: rgb(230,94,94);"></i></div>
+            <div class="illustration"><i class="fas fa-link" style="color: rgb(51, 65, 106);"></i></div>
             <div class="form-group"><input type="url" id="URL" name="URL" placeholder="URL" autocomplete="off" inputmode="url" class="form-control" style="background-color: rgb(52,52,52);" /></div>
             <% if(!public) { %>
                 <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password" id="password" style="background-color: rgb(51,51,51);"></div> 
             <% } %>
-            <div class="form-group"><button class="btn btn-primary btn-block" type="submit" style="background-color: rgb(230,94,94);">Shorten URL</button></div>
+            <div class="form-group"><button class="btn btn-primary btn-block" type="submit" style="background-color: rgb(51, 65, 106);">Shorten URL</button></div>
         </form>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
