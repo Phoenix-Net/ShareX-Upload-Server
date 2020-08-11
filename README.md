@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/Phoenixthedoggo/ShareX-Upload-Server/blob/master/src/server/views/assets/images/PhoenixNet%20CDN.png">
+  <img src="https://github.com/Phoenix-Net/ShareX-Upload-Server/blob/master/src/server/views/assets/images/PhoenixNet%20CDN.png">
 </p>
 
 <img src="https://img.shields.io/badge/Hosting-Hyper%20Expert-blue?style=flat-square&logo=server-fault&logo-color=white&link=https://qoilo.com/hosting" alt="Hosting"> <img src="https://img.shields.io/badge/Support-Discord-blue?style=flat-square&logo=discord&color=7289DA&logoColor=7289DA&link=https://discord.gg/h8qthfS" alt="Discord">  <img src="https://img.shields.io/badge/Version-4.5.2-red?style=flat-square&link=https://qoilo.com/hosting" alt="Version">
@@ -20,7 +20,7 @@
 
 ## Installation (Ubuntu 16.04 Server)
 ```sh
-git clone https://github.com/TannerReynolds/ShareX-Upload-Server.git
+git clone https://github.com/Phoenix-Net/ShareX-Upload-Server.git
 cd ShareX-Upload-Server
 chmod +x install.sh
 ./install.sh
